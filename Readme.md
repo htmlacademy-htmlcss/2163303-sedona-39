@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Намятова Полина](https://up.htmlacademy.ru/htmlcss/39/user/2163303).
-* Наставник: `[Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya)`.
-
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
+* Сайт: [Мой проект Седона](https://polyana1.github.io/2163303-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
