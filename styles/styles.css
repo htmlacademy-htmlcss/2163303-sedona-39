@@ -1,0 +1,445 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    background-color: #F2F2F2;
+}
+
+/*Шапка*/
+.page-header {
+    color: #000000;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navigation-user-link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.notification-badge {
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #7DB54F;
+}
+
+.header-button {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*Основное содержание*/
+
+/*Блок герой*/
+.hero {
+    color: #333333;
+    background-color: #F2F2F2;
+    background-image: url("../images/hero-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+/*Блок преимуществ*/
+.advantages-subtitle {
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.advantages-subtitle-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.advantages-item-wide-1 {
+    background-color: #82B3D3;
+}
+
+.advantages-item-wide-2 {
+    background: #83B3D31F;
+}
+
+.advantages-item-wide-3 {
+    background: #83B3D333;
+}
+
+.advantages-title {
+    color: #000000;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advantages-description {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.advantages-item-wide-1 .advantages-title {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.advantages-item-wide-1 .advantages-description {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*Инфраструктура*/
+.infrastructure-subtitle {
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.infrastructure-subtitle-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.infrastructure-item {
+    background: #83B3D31F;
+}
+
+.infrastructure-title {
+    color: #000000;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.infrastructure-description {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+/*Блок поиска*/
+.search {
+    text-align: center;
+}
+
+.search-title {
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.search-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.search-button {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*Блок подписки на рассылку*/
+.subscribe-theme-custom {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    background-image: url(../images/subscribe-background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.subscribe-title {
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subscribe-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subscribe-theme-custom .subscribe-title {
+    color: #FFFFFF;
+}
+
+.subscribe-theme-custom .subscribe-description {
+    color: #FFFFFF;
+}
+
+.subscribe-form-name input {
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.subscribe-button {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+}
+
+/*Фильтры*/
+.main-inner-bg {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    background-image: url(../images/main-inner-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+}
+
+.breadcrumbs-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.control {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.filter-range-control {
+    font-family: inherit;
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.filter-range-control input {
+    color: #000000;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.catalog-filter-submit {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+}
+
+.catalog-filter-reset {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+}
+/*Каталог*/
+.catalog-products-title {
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.select-control {
+    color: #333333;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+/*Карточки товара*/
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-title {
+    color: #000000;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-card-type {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.product-card-price {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.product-card-button {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.add-favorite-button {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.the-button-in-favorites {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #7DB54F;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.product-card-rating {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Пагинация*/
+.pagination {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    align-items: center;
+}
+
+.pagination-link {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-decoration: none;
+}
+
+.pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+/*Подвал*/
+.footer-social-link {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-phone {
+    color: #000000;
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.copyright {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+}
