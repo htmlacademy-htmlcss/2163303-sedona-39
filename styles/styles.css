@@ -14,17 +14,49 @@
     font-display: swap;
 }
 
+.html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    font-style: normal;
     color: #333333;
     background-color: #F2F2F2;
 }
 
 /*Шапка*/
-.page-header {
+.page-header-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
     color: #000000;
+    background-color: #FFFFFF;
+}
+
+.navigation-logo {
+    width: 140px;
+    margin-right: 30px;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 594px;
+}
+
+.navigation-user {
+    margin: 0;
+    padding: 0;
+    max-width: 268px;
+    margin-left: auto;
 }
 
 .navigation-link {
@@ -66,18 +98,40 @@ body {
 }
 
 /*Основное содержание*/
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
 
 /*Блок герой*/
 .hero {
     color: #333333;
-    background-color: #F2F2F2;
-    background-image: url("../images/hero-background.jpg");
-    background-size: 100% auto;
+    background-color: #83B3D333;
+    background-image: url("../images/divider.svg"), url("../images/hero-background.jpg");
+    background-size: 100% auto, cover;
     background-repeat: no-repeat;
+    background-position: left bottom, left top;
 }
 
+.hero-img {
+    display: block;
+    margin: 0 auto;
+}
 
 /*Блок преимуществ*/
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
 .advantages-subtitle {
     color: #000000;
     font-size: 30px;
@@ -93,15 +147,22 @@ body {
     text-align: center;
 }
 
-.advantages-item-wide-1 {
-    background-color: #82B3D3;
+.advantages-item {
+    width: 400px;
 }
 
-.advantages-item-wide-2 {
+.advantages-item-wide-dark {
+    background-color: #82B3D3;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.advantages-item-wide-light {
     background: #83B3D31F;
 }
 
-.advantages-item-wide-3 {
+.advantages-item-wide-medium {
     background: #83B3D333;
 }
 
@@ -114,17 +175,15 @@ body {
 }
 
 .advantages-description {
-    font-size: 18px;
-    line-height: 21px;
     text-align: center;
 }
 
-.advantages-item-wide-1 .advantages-title {
+.advantages-item-wide-dark .advantages-title {
     color: #FFFFFF;
     text-align: center;
 }
 
-.advantages-item-wide-1 .advantages-description {
+.advantages-item-wide-dark .advantages-description {
     color: #FFFFFF;
     text-align: center;
 }
@@ -145,8 +204,16 @@ body {
     text-align: center;
 }
 
+.infrastructure-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 .infrastructure-item {
     background: #83B3D31F;
+    width: 400px;
 }
 
 .infrastructure-title {
@@ -158,8 +225,6 @@ body {
 }
 
 .infrastructure-description {
-    font-size: 18px;
-    line-height: 21px;
     text-align: center;
 }
 
@@ -196,7 +261,7 @@ body {
 /*Блок подписки на рассылку*/
 .subscribe-theme-custom {
     color: #FFFFFF;
-    background-color: #82B3D3;
+    background-color: #83B3D333;
     background-image: url(../images/subscribe-background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -245,10 +310,14 @@ body {
 /*Фильтры*/
 .main-inner-bg {
     color: #FFFFFF;
-    background-color: #82B3D3;
+    background-color: #756157;
     background-image: url(../images/main-inner-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.catalog-filter {
+    display: flex;
 }
 
 .inner-header-title {
@@ -316,8 +385,14 @@ body {
     text-transform: uppercase;
     border: none;
 }
+
 /*Каталог*/
+.catalog-products-sorting {
+    display: flex;
+}
+
 .catalog-products-title {
+    width: 338px;
     color: #000000;
     font-size: 30px;
     line-height: 36px;
@@ -325,13 +400,34 @@ body {
 }
 
 .select-control {
+    width: 292px;
     color: #333333;
+    background-color: #FFFFFF;
     font-size: 18px;
     line-height: 21px;
+    margin-left: auto;
 }
 
+.view-buttons {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    margin-left: 70px;
+}
 
 /*Карточки товара*/
+.product-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    width: 340px;
+}
+
 .product-card-link {
     text-decoration: none;
 }
@@ -342,16 +438,6 @@ body {
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.product-card-type {
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.product-card-price {
-    font-size: 18px;
-    line-height: 21px;
 }
 
 .product-card-button {
@@ -399,6 +485,8 @@ body {
 
 /*Пагинация*/
 .pagination {
+    margin: 0;
+    padding: 0;
     color: #000000;
     font-size: 20px;
     font-weight: 700;
@@ -418,6 +506,20 @@ body {
 }
 
 /*Подвал*/
+.page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+}
+
+.footer-social-list {
+    margin: 0;
+    padding: 0;
+    width: 142px;
+}
+
 .footer-social-link {
     color: #000000;
     font-size: 20px;
@@ -428,6 +530,7 @@ body {
 }
 
 .footer-phone {
+    width: 720px;
     color: #000000;
     font-size: 40px;
     line-height: 40px;
@@ -436,6 +539,7 @@ body {
 }
 
 .copyright {
+    width: 115px;
     color: #000000;
     font-size: 20px;
     font-weight: 700;
