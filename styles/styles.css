@@ -32,40 +32,99 @@ body {
     background-color: #F2F2F2;
 }
 
-/*Шапка*/
-.page-header-container {
+.container {
     width: 1200px;
     margin: 0 auto;
-    display: flex;
-    color: #000000;
     background-color: #FFFFFF;
+    box-shadow: 0 0 15px 0 #00000033;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+}
+
+/*Шапка*/
+.page-header {
+    padding: 0 70px;
+}
+
+.page-header-content {
+    display: flex;
+    align-items: start;
+    color: #000000;
 }
 
 .navigation-logo {
-    width: 140px;
     margin-right: 30px;
+    align-self: flex-start;
+    margin-bottom: -6px;
+}
+
+.page-header-logo {
+    display: block;
+    box-sizing: border-box;
 }
 
 .navigation-list {
     margin: 0;
     padding: 0;
-    width: 594px;
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
-.navigation-user {
-    margin: 0;
-    padding: 0;
-    max-width: 268px;
-    margin-left: auto;
+.navigation-item {
+    padding: 20px 16px;
 }
 
 .navigation-link {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    text-align: center;
     color: #000000;
     text-decoration: none;
+}
+
+.navigation-user {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+}
+
+.navigation-user-item {
+    padding: 22px 12px;
+}
+
+.navigation-user-item-button {
+    margin-left: 20px;
 }
 
 .navigation-user-link {
@@ -77,35 +136,24 @@ body {
     text-decoration: none;
 }
 
-.notification-badge {
+.favorites-counter {
     font-size: 10px;
     line-height: 10px;
     text-align: center;
     color: #FFFFFF;
     background-color: #7DB54F;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .header-button {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #FFFFFF;
     background-color: #756157;
-    text-decoration: none;
-    text-transform: uppercase;
+    padding: 8px 34px;
 }
 
 /*Основное содержание*/
 .main-container {
     flex-grow: 1;
-}
-
-.page-container {
-    width: 1200px;
-    margin: 0 auto;
-    background-color: #FFFFFF;
 }
 
 /*Блок герой*/
@@ -121,18 +169,18 @@ body {
 .hero-img {
     display: block;
     margin: 0 auto;
+    padding: 51px 0 82px;
 }
 
 /*Блок преимуществ*/
-.advantages-list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+.advantages-description {
+    margin: 69px 0 90px;
 }
 
 .advantages-subtitle {
+    margin: 0 290px;
+    padding: 0;
+    margin-bottom: 25px;
     color: #000000;
     font-size: 30px;
     line-height: 36px;
@@ -142,9 +190,20 @@ body {
 }
 
 .advantages-subtitle-description {
+    margin: 0;
+    padding: 0;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+}
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    list-style: none;
 }
 
 .advantages-item {
@@ -166,7 +225,18 @@ body {
     background: #83B3D333;
 }
 
-.advantages-title {
+.advantages-item-reverse {
+    flex-direction: row-reverse;
+}
+
+.advantages-item-text {
+    margin: 102px 85px;
+}
+
+.advantages-item-title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 62px;
     color: #000000;
     font-size: 24px;
     line-height: 28px;
@@ -174,22 +244,31 @@ body {
     text-transform: uppercase;
 }
 
-.advantages-description {
+.advantages-item-description {
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
 
-.advantages-item-wide-dark .advantages-title {
+.advantages-item-wide-dark .advantages-item-title {
     color: #FFFFFF;
     text-align: center;
 }
 
-.advantages-item-wide-dark .advantages-description {
+.advantages-item-wide-dark .advantages-item-description {
     color: #FFFFFF;
     text-align: center;
 }
 
 /*Инфраструктура*/
+.infrastructure-description {
+    margin: 64px 348px;
+}
+
 .infrastructure-subtitle {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
     color: #000000;
     font-size: 30px;
     line-height: 36px;
@@ -199,6 +278,8 @@ body {
 }
 
 .infrastructure-subtitle-description {
+    padding: 0;
+    margin: 0;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
@@ -209,6 +290,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    list-style: none;
 }
 
 .infrastructure-item {
@@ -216,7 +298,48 @@ body {
     width: 400px;
 }
 
-.infrastructure-title {
+.infrastructure-item-background-none {
+    background: none;
+}
+
+.infrastructure-item-text {
+    margin: 85px 81px;
+}
+
+.advantages-icon-house::before {
+    content: " ";
+    display: block;
+    width: 75px;
+    height: 72px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url("../images/advantage-icon-house.svg");
+}
+
+.advantages-icon-food::before {
+    content: " ";
+    display: block;
+    width: 75px;
+    height: 72px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url("../images/advantage-icon-food.svg");
+}
+
+.advantages-icon-gift::before {
+    content: " ";
+    display: block;
+    width: 75px;
+    height: 76px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url("../images/advantage-icon-gift.svg");
+}
+
+.infrastructure-item-title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
     color: #000000;
     font-size: 24px;
     line-height: 28px;
@@ -224,17 +347,23 @@ body {
     text-transform: uppercase;
 }
 
-.infrastructure-description {
+.infrastructure-item-description {
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
 
 /*Блок поиска*/
 .search {
     text-align: center;
+    margin: 96px 304px;
 }
 
-.search-title {
+.search-subtitle {
+    padding: 0;
+    margin: 0;
     color: #000000;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -242,32 +371,38 @@ body {
 }
 
 .search-description {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 54px;
     font-size: 22px;
     line-height: 26px;
 }
 
 .search-button {
-    font-family: inherit;
     font-size: 20px;
     line-height: 36px;
-    font-weight: 700;
-    text-align: center;
-    color: #FFFFFF;
+    padding: 8px 50px;
     background-color: #756157;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 /*Блок подписки на рассылку*/
+.subscribe {
+    text-align: center;
+    padding: 96px 258px 104px 258px;
+}
+
 .subscribe-theme-custom {
     color: #FFFFFF;
     background-color: #83B3D333;
     background-image: url(../images/subscribe-background.jpg);
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.subscribe-title {
+.subscribe-subtitle {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
     color: #000000;
     font-size: 30px;
     line-height: 36px;
@@ -276,11 +411,14 @@ body {
 }
 
 .subscribe-description {
+    width: 475px;
+    margin: 0 auto;
     font-size: 22px;
     line-height: 26px;
+    margin-bottom: 36px;
 }
 
-.subscribe-theme-custom .subscribe-title {
+.subscribe-theme-custom .subscribe-subtitle {
     color: #FFFFFF;
 }
 
@@ -288,23 +426,33 @@ body {
     color: #FFFFFF;
 }
 
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .subscribe-form-name input {
     color: #000000;
+    background-color: #F2F2F2;
+    border: none;
+    width: 452px;
+    padding: 14px 20px;
     font-size: 18px;
     line-height: 24px;
+    border-radius: 4px 0 0 4px;
+}
+
+.subscribe-theme-custom .subscribe-form-name input {
+    background-color: #FFFFFF;
 }
 
 .subscribe-button {
-    font-family: inherit;
+    padding: 8px 50px;
+    border-radius:0 4px 4px 0;
     font-size: 20px;
     line-height: 36px;
-    font-weight: 700;
-    text-align: center;
-    color: #FFFFFF;
     background-color: #82B3D3;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none;
 }
 
 /*Фильтры*/
@@ -314,6 +462,7 @@ body {
     background-image: url(../images/main-inner-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 35px 70px 70px;
 }
 
 .catalog-filter {
@@ -321,9 +470,20 @@ body {
 }
 
 .inner-header-title {
+    margin: 0;
+    padding: 0;
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    display: flex;
+    /*gap: 10px;*/
+    list-style: none;
 }
 
 .breadcrumbs-link {
@@ -334,10 +494,24 @@ body {
     text-align: center;
 }
 
+.filters {
+    margin-top: 40px;
+}
+
+/*.catalog-filter-group {
+    border: none;
+}*/
+
 .catalog-filter-title {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
+}
+
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .control {
@@ -360,38 +534,27 @@ body {
     font-weight: 700;
 }
 
-.catalog-filter-submit {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #FFFFFF;
+.submit-button {
     background-color: #82B3D3;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none;
 }
 
-.catalog-filter-reset {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #FFFFFF;
+.reset-button {
     background: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none;
 }
 
 /*Каталог*/
+.catalog-content {
+    margin: 50px 70px 60px;
+}
+
 .catalog-products-sorting {
     display: flex;
+    align-items: center;
 }
 
 .catalog-products-title {
+    margin: 0;
+    padding: 0;
     width: 338px;
     color: #000000;
     font-size: 30px;
@@ -400,28 +563,28 @@ body {
 }
 
 .select-control {
-    width: 292px;
     color: #333333;
     background-color: #FFFFFF;
     font-size: 18px;
     line-height: 21px;
     margin-left: auto;
+    margin-right: 70px;
 }
 
 .view-buttons {
     margin: 0;
     padding: 0;
     width: 160px;
+    display: flex;
+    list-style: none;
     margin-left: 70px;
 }
 
 /*Карточки товара*/
 .product-list {
-    margin: 0;
+    margin: 40px 0 80px;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    list-style: none;
 }
 
 .product-card {
@@ -441,63 +604,58 @@ body {
 }
 
 .product-card-button {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #FFFFFF;
     background-color: #756157;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 .add-favorite-button {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #FFFFFF;
     background-color: #82B3D3;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 .the-button-in-favorites {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #FFFFFF;
     background-color: #7DB54F;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 .product-card-rating {
+    width: 254px;
+    padding: 9px 23px;
     font-size: 16px;
     line-height: 20px;
+    background-color: #F2F2F2;
     text-align: center;
     text-transform: uppercase;
 }
 
 /*Пагинация*/
-.pagination {
+.pagination-list {
+    display: flex;
     margin: 0;
     padding: 0;
-    color: #000000;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 36px;
-    align-items: center;
+    gap: 8px;
+    list-style: none;
 }
 
 .pagination-link {
+    display: block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    padding: 12px 18px;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
     color: #FFFFFF;
     background-color: #82B3D3;
+    text-align: center;
     text-decoration: none;
+    border-radius: 4px;
+}
+
+.pagination-hidden {
+    color: #000000;
+    background: none;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
 }
 
 .pagination-current {
@@ -505,19 +663,33 @@ body {
     background-color: #F2F2F2;
 }
 
+.pagination-link-action:hover {
+    background-color: #68A2CA;
+}
+
+.pagination-link-action:active {
+    color: #FFFFFF4D;
+    background-color: #82B3D3;
+}
+
 /*Подвал*/
-.page-footer-container {
+.page-footer {
+    padding: 40px 70px 30px;
+}
+
+.page-footer-content {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    background-color: #FFFFFF;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-social-list {
+    color: #000000;
     margin: 0;
     padding: 0;
     width: 142px;
+    display: flex;
+    list-style: none;
 }
 
 .footer-social-link {
@@ -539,7 +711,6 @@ body {
 }
 
 .copyright {
-    width: 115px;
     color: #000000;
     font-size: 20px;
     font-weight: 700;
