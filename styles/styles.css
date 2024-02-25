@@ -71,9 +71,6 @@ body {
 /*Шапка*/
 .page-header {
     padding: 0 70px;
-}
-
-.page-header-content {
     display: flex;
     align-items: start;
     color: #000000;
@@ -173,14 +170,9 @@ body {
 }
 
 /*Блок преимуществ*/
-.advantages-description {
-    margin: 69px 0 90px;
-}
-
 .advantages-subtitle {
-    margin: 0 290px;
+    margin: 69px 290px 25px 0;
     padding: 0;
-    margin-bottom: 25px;
     color: #000000;
     font-size: 30px;
     line-height: 36px;
@@ -192,6 +184,7 @@ body {
 .advantages-subtitle-description {
     margin: 0;
     padding: 0;
+    margin-bottom: 90px;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
@@ -261,14 +254,10 @@ body {
 }
 
 /*Инфраструктура*/
-.infrastructure-description {
-    margin: 64px 348px;
-}
 
 .infrastructure-subtitle {
     padding: 0;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 64px 348px 20px 0;
     color: #000000;
     font-size: 30px;
     line-height: 36px;
@@ -280,6 +269,7 @@ body {
 .infrastructure-subtitle-description {
     padding: 0;
     margin: 0;
+    margin-bottom: 64px;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
