@@ -394,7 +394,7 @@ body {
 .subscribe-theme-custom {
     color: #FFFFFF;
     background-color: #83B3D333;
-    background-image: url(../images/subscribe-background.jpg);
+    background-image: url("../images/subscribe-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -459,7 +459,7 @@ body {
 .main-inner-bg {
     color: #FFFFFF;
     background-color: #756157;
-    background-image: url(../images/main-inner-background.jpg);
+    background-image: url("../images/main-inner-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 35px 70px 70px;
@@ -667,6 +667,10 @@ body {
     background-color: #68A2CA;
 }
 
+.pagination-link-action:focus {
+    background-color: #68A2CA;
+}
+
 .pagination-link-action:active {
     color: #FFFFFF4D;
     background-color: #82B3D3;
@@ -710,6 +714,18 @@ body {
     text-align: center;
 }
 
+.footer-phone:hover {
+   color: #756157;
+}
+
+.footer-phone:focus {
+    color: #756157;
+}
+
+.footer-phone:active {
+    color: #7561574D;
+}
+
 .copyright {
     color: #000000;
     font-size: 20px;
@@ -717,4 +733,25 @@ body {
     line-height: 24px;
     text-decoration: none;
     text-align: center;
+}
+
+.copyright {
+    content: " ";
+    display: block;
+    width: 115px;
+    height: 33px;
+    margin: 0 auto;
+    background-image: url("../images/logo-htmlacademy.svg");
+}
+
+.copyright:hover {
+    background-image: url("../images/logo-htmlacademy-hover.svg");
+}
+
+.copyright:focus {
+    background-image: url("../images/logo-htmlacademy-focus.svg");
+}
+
+.copyright:active {
+    background-image: url("../images/logo-htmlacademy-active.svg");
 }
