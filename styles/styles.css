@@ -277,7 +277,7 @@ body {
 .hero {
     min-height: 485px;
     color: #333333;
-    background-color: #83B3D333;
+    background-color: #ABADAF;
     background-image: url("../images/divider.svg"), url("../images/hero-background.jpg");
     background-size: 100% auto, cover;
     background-repeat: no-repeat;
@@ -322,12 +322,11 @@ body {
 
 .advantages-item {
     width: 400px;
-    height: 385px;
 }
 
 .advantages-item-img {
     width: 800px;
-    height: 385px;
+    height: auto;
 }
 
 .advantages-item-wide-dark {
@@ -529,7 +528,7 @@ body {
 
 .subscribe-theme-custom {
     color: #FFFFFF;
-    background-color: #83B3D333;
+    background-color: #ABADAF;
     background-image: url("../images/subscribe-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -597,7 +596,7 @@ body {
 /*Фильтры*/
 .main-inner-content {
     color: #FFFFFF;
-    background-color: #756157;
+    background-color: #ABADAF;
     background-image: url("../images/main-inner-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -614,11 +613,23 @@ body {
 
 .breadcrumbs {
     display: flex;
+    align-items: center;
     margin: 0;
-    margin-top: 8px;
+    margin-top: 7px;
     padding: 0;
     gap: 10px;
     list-style: none;
+}
+
+.breadcrumbs-arrow::before {
+    content: " ";
+    display: inline-block;
+    width: 8px;
+    height: 11px;
+    margin-right: 5px;
+    background-image: url(../images/breadcrumbs-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .breadcrumbs-link,
@@ -649,16 +660,6 @@ body {
 
 .breadcrumbs-home:active {
     fill: #FFFFFF4D;
-}
-
-.breadcrumbs-arrow {
-    content: " ";
-    display: inline-block;
-    width: 8px;
-    height: 21px;
-    background-image: url(../images/breadcrumbs.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .filters {
@@ -948,26 +949,21 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-
     width: 160px;
-
     display: flex;
-    flex-wrap: wrap;
     gap: 8px;
 }
 
 .card-button {
     padding: 0;
-
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 4px;
-
     background-size: 16px 14px;
     background-repeat: no-repeat;
     background-position: center;
@@ -1014,6 +1010,7 @@ body {
     display: grid;
     -ms-grid-columns: 140px 20px 140px;
     grid-template-columns: repeat(2, 140px);
+    grid-template-rows: 1fr;
     gap: 17px 20px;
     box-shadow: 0 0 0 1px #e6e6e6;
     padding: 20px;
@@ -1083,10 +1080,11 @@ body {
 }
 
 .product-card-rating {
-    display: block;
+    display: inline-block;
     width: 140px;
+    height: 20px;
     margin: 0;
-    padding: 8px 0;
+    padding: 9px 0 8px 0;
     font-size: 16px;
     line-height: 20px;
     border-radius: 4px;
@@ -1166,6 +1164,7 @@ body {
     padding: 0;
     color: #000000;
     width: 142px;
+    flex-wrap: wrap;
     height: 40px;
     display: flex;
     list-style: none;
