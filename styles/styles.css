@@ -586,10 +586,6 @@ body {
     border-radius: 4px 0 0 4px;
 }
 
-.subscribe-theme-custom .subscribe-form-name input {
-    background-color: #FFFFFF;
-}
-
 .subscribe-button {
     width: 232px;
     height: 52px;
