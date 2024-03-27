@@ -188,6 +188,14 @@ body {
     text-decoration: none;
 }
 
+.navigation-link-hover:hover {
+    color: #82B3D3;
+}
+
+.navigation-link-hover:active {
+    color: #000000;
+}
+
 .navigation-link-hover::before {
     content: "";
     position: absolute;
@@ -244,6 +252,19 @@ body {
     min-width: 20px;
     min-height: 20px;
 }
+
+.user-link-img {
+    fill: #000000;
+}
+
+.user-link-img:hover {
+    fill: #82B3D3;
+}
+
+.user-link-img:active {
+    fill: #000000;
+}
+
 
 .favorites-counter {
     position: absolute;
@@ -429,6 +450,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
 }
@@ -818,6 +840,18 @@ body {
 
 .max-price {
     border-radius: 0 5px 5px 0;
+}
+
+.min-max-price[type="number"]::-webkit-outer-spin-button,
+.min-max-price[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+
+.min-max-price[type='number'],
+.min-max-price[type="number"]:hover,
+.min-max-price[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .range-scale {
@@ -1474,9 +1508,11 @@ body {
     line-height: 1.31;
 }
 
-/* .warning-close {
+/* Необходимо чтобы скрыть Сообщение об ошибке
+.warning-close {
     display: none;
-  } */
+}
+*/
 
 .message {
     position: absolute;
@@ -1486,9 +1522,11 @@ body {
     line-height: 1.31;
 }
 
-/*.message-close {
+/*Необходимо чтобы скрыть Сообщение
+.message-close {
     display: none;
-} */
+}
+*/
 
 .tooltip {
     position: absolute;
